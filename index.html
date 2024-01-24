@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="image/png" rel="icon" href="./assets/icons/favicon.png">
   <link rel="stylesheet" href="./assets/style/style.css">
-  <title>Flex adaptive layout</title>
+  <title>Flex adaptive</title>
 </head>
 
 <body>
@@ -14,34 +14,37 @@
   <!-- Header -->
 
   <header>
-    <h1>Welcome to Acme Web Solutions</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi
-      laboriosam eos
-      saepe asperiores dolorum.</p>
-    <div>
-      <a href="#info">Read more</a>
+    <div class="infoInHeader">
+      <h1>Welcome to Acme Web Solutions</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi
+        laboriosam eos
+        saepe asperiores dolorum.</p>
+      <a href="#info" class="btnInHeader">Read more</a>
     </div>
   </header>
 
   <!-- Main -->
 
   <main>
-    <article>
-      <h2>Web & Application Development</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam
-      laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit
-      voluptas
-      nobis sequi animi totam, accusantium, ex eius quia, natus quo?
-    </article>
+    <div class="columnBox">
+      <article class="column">
+        <h2>Web & Application Development</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam
+        laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt
+        velit
+        voluptas
+        nobis sequi animi totam, accusantium, ex eius quia, natus quo?
+      </article>
+    </div>
+
 
     <!-- Skills card -->
 
-    <div class="info" id="info">
+    <div id="info">
       <div class="skills">
         <picture>
-          <source media="(max-width: 700px)" srcset="./assets/images/web-dev-small.jpeg">
-
-          <img src="./assets/images/web-dev.jpeg" alt="Web dev">
+          <source media="(max-width: 700px)" srcset="./assets/images/web-dev-small.jpeg" class="CardImg">
+          <img src="./assets/images/web-dev.jpeg" alt="Web dev" class="CardImg">
         </picture>
         <h3>Tech Marketing</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit
@@ -50,9 +53,8 @@
       </div>
       <div class="skills">
         <picture>
-          <source media="(max-width: 700px)" srcset="./assets/images/mobile-app-small.jpeg">
-
-          <img src="./assets/images/mobile-app.jpeg" alt="Mobile App">
+          <source media="(max-width: 700px)" srcset="./assets/images/mobile-app-small.jpeg" class="CardImg">
+          <img src="./assets/images/mobile-app.jpeg" alt="Mobile App" class="CardImg">
         </picture>
         <h3>Web Development</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit
@@ -61,9 +63,8 @@
       </div>
       <div class="skills">
         <picture>
-          <source media="(max-width: 700px)" srcset="./assets/images/tech-marketing-small.jpeg">
-
-          <img src="./assets/images/tech-marketing.jpeg" alt="Tech marketing">
+          <source media="(max-width: 700px)" srcset="./assets/images/tech-marketing-small.jpeg" class="CardImg">
+          <img src="./assets/images/tech-marketing.jpeg" alt="Tech marketing" class="CardImg">
         </picture>
         <h3>Mobile Applications</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit
